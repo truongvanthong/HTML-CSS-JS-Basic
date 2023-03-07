@@ -1,7 +1,12 @@
 body {
+    width: 100%;
+    height: 100vh; 
     background-image: url('./image/bg3.gif');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 #title {
@@ -49,5 +54,7 @@ body {
 li{
     font-size: 30px;
     margin-bottom: 50px;
-    font-weight: bold;  
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
 }
