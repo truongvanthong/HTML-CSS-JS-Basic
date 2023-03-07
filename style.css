@@ -1,0 +1,53 @@
+body {
+    background-image: url('./image/bg3.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title {
+    border-right: solid 3px rgba(0, 0, 0, 0.75);
+    white-space: pre;
+    overflow: hidden;     
+    letter-spacing: 0.20rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    padding-left: 70px;
+    
+    animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
+    animated-cursor 750ms steps(11,end) infinite;
+  
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: #06faf2;
+  
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  }
+  
+  #title.darker-title {
+    animation: animated-text 2s steps(11,end) 0.5s 1 normal both, darker-animated-cursor 750ms steps(11,end) infinite;
+  }
+  
+  /* text animation */
+  @keyframes animated-text{
+    from{width: 0%;}
+    to{width: 390px;}
+  }
+  
+  /* cursor animations */
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0, 0, 0, 0.75);}
+    to{border-right-color: transparent;}
+  }
+  
+  @keyframes darker-animated-cursor {
+    from{border-right-color: #01394c;}
+    to{border-right-color: transparent;}
+  }
+
+li{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: bold;  
+}
