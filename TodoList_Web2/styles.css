@@ -1,0 +1,84 @@
+body {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+.container {
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+
+/* ----------------------------------------------------------------------------*/
+
+/* Animation */
+#title {
+  border-right: solid 3px rgba(0, 0, 0, 0.75);
+  white-space: pre;
+  overflow: hidden;     
+  letter-spacing: 0.20rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  max-width: 400px;
+
+  animation: animated-text 2s steps(11,end) 0.5s 1 normal both,
+  animated-cursor 750ms steps(11,end) infinite;
+
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  color: #06faf2;
+
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+#title.darker-title {
+  animation: animated-text 2s steps(11,end) 0.5s 1 normal both, darker-animated-cursor 750ms steps(11,end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text{
+  from{width: 0%;}
+  to{width: 390px;}
+}
+
+/* cursor animations */
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes darker-animated-cursor {
+  from{border-right-color: #01394c;}
+  to{border-right-color: transparent;}
+}
+
+/* ----------------------------------------------------------------------------*/
+input[type="text"], 
+input[type="text"]:focus {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+}
+.form-control::placeholder {
+  color: rgb(40, 40, 40);
+  font-size: 18px;
+}
+
+label {
+  color: #06faf2;
+  font-size: 18px;
+}
+
+.todos li {
+  background: #4b716c;
+}
+.delete {
+  cursor: pointer;
+}
+.filtered {
+  display: none !important;
+}

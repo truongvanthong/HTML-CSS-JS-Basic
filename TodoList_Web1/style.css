@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"); /* chèn font chữ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  height: 85vh; 
+  /* background-color: hsl(164, 95%, 36%); */
+  background-image: url("bg2.gif");
+  background-size: cover; 
+
+}
+.wrapper { /* tạo khung chứa */ 
+  width: 100%; 
+  height: 600px; 
+  max-width: 450px;   
+  margin: 120px auto;  
+  /* background: #030d29; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  border-radius: 25px; 
+  padding: 25px;
+}
+.wrapper header {
+  font-size: 30px;
+  font-weight: 550;
+  color: hsl(180, 99%, 50%);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.wrapper .inputField {
+  display: flex; 
+  height: 45px; 
+  width: 100%; 
+  margin: 20px 0;
+}
+.inputField input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border: 3px solid rgb(17, 136, 188);
+  font-size: 17px;
+  font-weight: 300;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+.inputField button {
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #a1a3a5;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid rgb(17, 136, 188);
+  margin-left: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.6;
+  pointer-events: none; 
+}
+.inputField button.active { /* khi click vào nút thì nút sẽ hiện màu */
+  opacity: 1;
+  pointer-events: auto; 
+}
+
+.wrapper h4 { /* tạo tiêu đề */
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.wrapper .todoList {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.todoList li { /* tạo danh sách */
+  position: relative;
+  list-style: none;
+  width: 340px;
+  height: 60px;
+  background: #031956;
+  color: #ffffff; 
+  padding: 0 15px;
+  line-height: 60px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  cursor: default;
+  overflow: hidden;
+}
+.todoList li i { /* tạo nút xóa */
+  position: absolute; 
+  right: -30px;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #f50707;
+  cursor: pointer; 
+  transition: all 0.3 ease; /* tạo hiệu ứng */
+}
+.todoList li:hover i { 
+  right: 0px;
+}
+.wrapper .footer { /* tạo chữ bên dưới */
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+.footer span {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer button {
+  border: none;
+  outline: none;
+  background: #ff0000;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 6px 15px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.footer button.active { /* khi click vào nút thì nút sẽ hiện màu */
+  opacity: 1;
+  pointer-events: auto;
+}
