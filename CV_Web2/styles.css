@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #5e5050;
+}
+
+.main-content{
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);  
+}
+
+.left-section{
+    grid-column: span 2;
+    height: 100%;
+    background-color: #103348;
+}
+    
+.right-section{
+    grid-column: span 5;
+    background-color: #f7f7f7;
+    height: 100%;
+}
+
+.left-content{
+    padding: 1rem 2rem;
+}
+
+.profile{
+        width: 100%;
+        border-bottom: 1px solid #f7f7f7
+}
+
+.profile img{
+    width: 100%;
+    border-radius: 50%;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.name{
+    font-size: 1rem;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1.5rem;
+    /* padding bottom is basically creating a space between name and rest of items */
+}
+
+.career{
+    font-size: 1.5rem;
+    color: #94d9ea;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+.main-title{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f7f7f7ec;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.contact-info ul{
+    padding-top: 2rem ;
+
+}
+
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff
+}
+
+.contact-info ul li i{
+    /* to create spacing of the icons from the text after  */
+    padding-right: 1rem;
+    font-size: 1.2 rem;
+    color: #2d9cdb
+}
+
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+
+.progress-bar{
+    width: 100%;
+    height: .4rem;
+    background-color: #2D3748;
+    position: relative;
+    border-radius: 12px;
+}
+
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #2D9CDB;
+}
+
+.Machine_Learning-progress{
+    width: 30%
+}
+
+.EGS-progress{
+    width: 40%
+}
+
+.SQL-progress{
+    width: 40%
+}
+
+.Python-progress{
+    width: 80%;
+}
+
+.visualization-progress {
+    width: 80%;
+}
+
+.skill-title{
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem
+}
+
+.sub-title{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+}
+
+.right-main-content{
+    padding: 2rem 3 rem;
+}
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2F80ED;
+    margin-bottom: 1.2rem;
+    position: relative;
+    padding-right: 2rem
+}
+
+.right-title::after{
+    /* this is for the blue divider bar */
+    content:"";
+    position: absolute;
+    width: 60%;
+    height: .1rem;
+    background-color: #2D9CDB;
+    border-radius: 12px;
+    right:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.para{
+    line-height: 1.6rem;
+    padding-left: 10%;
+    color: #4b596d;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+    
+.timeline{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2%;
+}
+
+.tl-title{
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #002333;
+    text-transform: uppercase;
+}
+
+.tl-title-2{
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #2D9CDB;
+    text-transform: uppercase;
+}
+
+.tl-content{
+    border-left: 1px solid #ccc;
+    padding-left: 1rem;
+    /* border between place of work and job description */
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tl-title-2::before{
+    content: "";
+    position: absolute;
+    width: .7rem;
+    height: .7rem;
+    background-color: #2d9cdb;
+    border-radius: 50%;
+    left: 0;
+    transform: translateX(-50%)
+}
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }

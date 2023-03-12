@@ -1,0 +1,182 @@
+* {margin: 0;padding: 0;}
+
+body{font-family: 'Montserrat', sans-serif;}
+
+#page {
+    min-height: 200px;
+    width: 60%; 
+    min-width: 600px;
+    background: rgb(217, 254, 248);
+    margin: 50px auto;
+    padding: 30px;
+    color: #0d1c23;
+}
+
+.photo-and-name {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.photo {
+    width: 22%;
+    min-width: 130px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.contact-info-box {
+    width: 70.9%;
+    display: inline-block;
+}
+
+.name {
+    margin-bottom: -5px;
+}
+.job-title {
+    display: inline-block;
+}
+
+.contact-details {
+    background: #3287ac;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+#objective h3 {
+    border: 3px solid #d3d3d3; 
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+    
+}
+
+#objective p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #000;
+}
+
+#education h3 {
+    border: 3px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#education table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#education table tr.school-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#education table tr.school-2 td:first-child {
+    padding-bottom: 25px;
+}
+
+#Experience h3 {
+    border: 3px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#Experience table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#Experience table tr.work-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#Experience table tr.work-1 td {
+    padding-bottom: 25px;
+}
+
+#Experience table tr.work-2 td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#Experience h3 {
+    border: 3px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#bio-data table tr td:nth-child(2) {
+    width: 300px;
+}
+
+#skills h3 {
+    border: 3px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#skills table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#skills table tr td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#skills table tr td:nth-child(2) {
+    width: 300px;
+}
+
+#skills table tr td:nth-child(3) {
+    width: 300px;
+}
+
+#skills table tr td:nth-child(4) {
+    width: 300px;
+}
+
+#projects h3 {
+    border: 3px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+#projects table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+#projects table tr td:first-child {
+    width: 120px;
+    color: gray;
+}
+#projects table tr td:nth-child(2) {
+    width: 300px;
+}
